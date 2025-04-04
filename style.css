@@ -4,90 +4,25 @@ body{
     background-color: rgb(10, 0, 100);
     cursor: default;
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
-
-.wrapper {
-  width: 90%;
-  max-width: 1536px;
-  margin-inline: auto;
+#container{
+  margin: 0; 
+  padding: 0;
+  font-family: sans-serif; 
+  width: 80%; 
+  margin: 0 auto;
   position: relative;
-  height: 100px;
-  margin-top: 5rem;
-  overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) ,
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0) 
-  );
+  top: 10%;
 }
 
-@keyframes scrollLeft {
-  to {
-    left: -200px;
-  }
-}
-
-.item {
-  width:650px;
-  height: 100px;
-  color: rgb(225, 198, 163);
+.container{ 
+  display: flex; 
+  align-items: center; 
+  margin-top: 6%;
   font-size: 35px;
   font-weight: bold;
   font-family: monospace;
-  position: absolute;
-  left: max(calc(200px * 10), 100%);
-  animation-name: scrollLeft;
-  animation-duration: 30s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  color: rgb(225, 198, 163);
 }
-
-.item1 {
-  animation-delay: calc(30s / 9 * (9 - 1) * -1);
-}
-
-.item2 {
-  animation-delay: calc(30s / 9 * (9 - 2) * -1);
-}
-
-.item3 {
-  animation-delay: calc(30s / 9 * (9 - 3) * -1);
-}
-
-.item4 {
-  animation-delay: calc(30s / 9 * (9 - 4) * -1);
-}
-
-.item5 {
-  animation-delay: calc(30s / 9 * (9 - 5) * -1);
-}
-
-.item6 {
-  animation-delay: calc(30s / 9 * (9 - 6) * -1);
-}
-
-.item7 {
-  animation-delay: calc(30s / 9 * (9 - 7) * -1);
-}
-
-.item8 {
-  animation-delay: calc(30s / 9 * (8 - 8) * -1);
-}
-
-.item9 {
-    animation-delay: calc(30s / 9 * (9 - 9) * -1);
-  }
 /* ------------------------------------------------------ */
 h1{
     color: rgb(240, 248, 255);
@@ -242,7 +177,6 @@ h1{
     cursor: pointer;
 }
 
-
 /* -------------------------MARIA----------------------------- */
 
 #Mtitle{
@@ -271,7 +205,8 @@ h1{
   left: 7%;
   top: 30%;
   color: aliceblue;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.6;
   font-family: monospace;
 }
 
@@ -280,7 +215,8 @@ h1{
   left: 70%;
   top: 50%;
   color:#cf0202;
-  font-size: 25px;
+  font-size: 22px;
+  line-height: 1.6;
   font-weight: bold;
   font-family: monospace;
 }
@@ -289,7 +225,7 @@ h1{
   width: 50%;
   position: absolute;
   left: 7%;
-  top: 83%;
+  top: 89%;
   color:rgb(225, 198, 163);
   font-size: 16px;
   font-family: monospace;
@@ -299,7 +235,7 @@ h1{
   width: 50%;
   position: absolute;
   left: 7%;
-  top: 83%;
+  top: 89%;
   color:rgb(225, 198, 163);
   font-size: 16px;
   font-family: monospace;
@@ -316,9 +252,10 @@ h1{
 #Mlecture{
   position: absolute;
   left: 40%;
-  top: 85%;
+  top: 88%;
   color: #cf0202;
   font-size: 30px;
+  
   font-weight: bold;
   font-family: monospace;
 }
@@ -327,9 +264,10 @@ h1{
   width: 50%;
   position: absolute;
   left: 40%;
-  top: 100%;
+  top: 101%;
   color: aliceblue;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.6;
   font-family: monospace;
   padding-bottom: 20px;
 }
@@ -353,6 +291,7 @@ h1{
   top: 23%;
   color: rgb(225, 198, 163);
   font-size: 16px;
+  line-height: 1.5;
   font-family: monospace;
 }
 
@@ -360,9 +299,10 @@ h1{
   width: 50%;
   position: absolute;
   left: 7%;
-  top: 33%;
+  top: 35%;
   color: aliceblue;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.6;
   font-family: monospace;
 }
 
@@ -371,7 +311,8 @@ h1{
   left: 70%;
   top: 50%;
   color:#cf0202;
-  font-size: 25px;
+  font-size: 22px;
+  line-height: 1.6;
   font-weight: bold;
   font-family: monospace;
 }
@@ -380,7 +321,7 @@ h1{
   width: 50%;
   position: absolute;
   left: 7%;
-  top: 65%;
+  top: 70%;
   color:rgb(225, 198, 163);
   font-size: 16px;
   font-family: monospace;
@@ -390,7 +331,7 @@ h1{
   width: 50%;
   position: absolute;
   left: 7%;
-  top: 65%;
+  top: 70%;
   color:rgb(225, 198, 163);
   font-size: 16px;
   font-family: monospace;
@@ -418,9 +359,10 @@ h1{
   width: 50%;
   position: absolute;
   left: 40%;
-  top: 90%;
+  top: 88%;
   color: aliceblue;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.6;
   font-family: monospace;
   padding-bottom: 20px;
 }
@@ -444,6 +386,7 @@ h1{
   top: 23%;
   color: rgb(225, 198, 163);
   font-size: 16px;
+  line-height: 1.5;
   font-family: monospace;
 }
 
@@ -451,9 +394,10 @@ h1{
   width: 50%;
   position: absolute;
   left: 7%;
-  top: 33%;
+  top: 34%;
   color: aliceblue;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.6;
   font-family: monospace;
 }
 
@@ -462,7 +406,8 @@ h1{
   left: 70%;
   top: 50%;
   color:#cf0202;
-  font-size: 25px;
+  font-size: 22px;
+  line-height: 1.6;
   font-weight: bold;
   font-family: monospace;
 }
@@ -509,9 +454,10 @@ h1{
   width: 50%;
   position: absolute;
   left: 40%;
-  top: 90%;
+  top: 87%;
   color: aliceblue;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.6;
   font-family: monospace;
   padding-bottom: 20px;
 }
@@ -536,6 +482,7 @@ h1{
   top: 23%;
   color: rgb(225, 198, 163);
   font-size: 16px;
+  line-height: 1.5;
   font-family: monospace;
 }
 
@@ -543,9 +490,10 @@ h1{
   width: 50%;
   position: absolute;
   left: 7%;
-  top: 33%;
+  top: 34%;
   color: aliceblue;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.6;
   font-family: monospace;
 }
 
@@ -554,7 +502,8 @@ h1{
   left: 70%;
   top: 50%;
   color:#cf0202;
-  font-size: 25px;
+  font-size: 22px;
+  line-height: 1.6;
   font-weight: bold;
   font-family: monospace;
 }
@@ -601,14 +550,13 @@ h1{
   width: 50%;
   position: absolute;
   left: 40%;
-  top: 90%;
+  top: 87%;
   color: aliceblue;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.6;
   font-family: monospace;
   padding-bottom: 20px;
 }
-
-
 
 /* ------------------------COMMUNAL------------------------------ */
 .back2{
