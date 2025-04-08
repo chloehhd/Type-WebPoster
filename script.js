@@ -218,14 +218,14 @@ function myFunction2(){
 $('#myInput').on('keydown', function (event) {
   if (event.key === 'Enter') {
     const query = $(this).val().toLowerCase(); 
-    
-    if (query === 'maria' | query === 'dr maria' | query === 'dr m' | query === 'dr mar' | query === 'Dr Maria-Carolina Cambre' | query === 'Cambre' | query === 'Cam' |query === 'mar' ) {
+
+    if (query === 'maria' | query === 'dr maria' | query === 'dr m' | query === 'dr ma' |query === 'dr mar' | query === 'Dr Maria-Carolina Cambre' | query === 'Cambre' | query === 'Cam' |query === 'mar' ) {
       $("#Maria").show();
       $("#nav").show();
       $("#test").hide();
       $("#search").hide();
     } 
-    else if (query === 'isabel' | query === 'dr isabel' | query === 'dr i' | query === 'dr is' | query === 'Dr Isabel Machado' | query === 'Machado' | query === 'Mac' |query === 'is' ) {
+    else if (query === 'isabel' | query === 'dr isabel' | query === 'dr i' | query === 'dr is' | query === 'dr isa' |  query === 'Dr Isabel Machado' | query === 'Machado' | query === 'Mac' |query === 'is' ) {
       $("#Isabel").show();
       $("#nav").show();
       $("#test").hide();
@@ -237,7 +237,7 @@ $('#myInput').on('keydown', function (event) {
       $("#test").hide();
       $("#search").hide();
     } 
-    else if (query === 'shima' | query === 'dr shima' | query === 'dr s' | query === 'dr sh' | query === 'Dr Shima Rezaei Rashnoodi' | query === 'Rezaei Rashnoodi' |  query === 'Rezaei' | query === 'Rashnoodi' | query === 'sh') {
+    else if (query === 'shima' | query === 'dr shima' | query === 'dr s' | query === 'dr sh' | query === 'dr shi' |query === 'Dr Shima Rezaei Rashnoodi' | query === 'Rezaei Rashnoodi' |  query === 'Rezaei' | query === 'Rashnoodi' | query === 'sh') {
       $("#Shima").show();
       $("#nav").show();
       $("#test").hide();
@@ -250,7 +250,7 @@ $('#top').on('keydown', function (event) {
   if (event.key === 'Enter') {
     const query = $(this).val().toLowerCase(); 
 
-    if (query === 'maria' | query === 'm' |  query === 'dr maria' | query === 'dr m' | query === 'Dr Maria-Carolina Cambre' | query === 'Cambre' | query === 'mar' | query === 'ma' ) {
+    if (query === 'maria' | query === 'dr maria' | query === 'dr m' | query === 'dr ma' |query === 'dr mar' | query === 'Dr Maria-Carolina Cambre' | query === 'Cambre' | query === 'Cam' |query === 'mar' ) {
       $("#test").hide();
       $("#navTest").hide();
       $("#Isabel").hide();
@@ -259,8 +259,8 @@ $('#top').on('keydown', function (event) {
       $("#Maria").show();
       $("#nav").show();
     } 
-    else if (query === 'isabel' | query === 'dr isabel' | query === 'i' | query === 'dr i' | query === 'Dr Isabel Machado' | query === 'Machado' | query === 'is' | query === 'isa') {
-        $("#test").hide();
+    else if (query === 'isabel' | query === 'dr isabel' | query === 'dr i' | query === 'dr is' | query === 'dr isa' |  query === 'Dr Isabel Machado' | query === 'Machado' | query === 'Mac' |query === 'is' ) {
+      $("#test").hide();
         $("#navTest").hide();
         $("#Maria").hide();
         $("#Daniel").hide();
@@ -268,7 +268,7 @@ $('#top').on('keydown', function (event) {
         $("#Isabel").show();
         $("#nav").show();
     } 
-    else if (query === 'daniel' | query === 'd' | query === 'dan' | query === 'Daniel Wildberger' | query === 'Wildberger' | query === 'da' ) {
+    else if (query === 'daniel' | query === 'daniel' | query === 'dan' | query === 'Daniel Wildberger' | query === 'Wildberger' | query === 'Wil' | query === 'da' ) {
       $("#test").hide();
       $("#navTest").hide();
       $("#Maria").hide();
@@ -277,7 +277,7 @@ $('#top').on('keydown', function (event) {
       $("#Daniel").show();
       $("#nav").show();
     } 
-    else if (query === 'shima' | query === 'dr shima' | query === 's' | query === 'dr s' | query === 'Dr Shima Rezaei Rashnoodi' | query === 'Rezaei Rashnoodi' |  query === 'Rezaei' | query === 'Rashnoodi' | query === 'sh' | query === 'shi') {
+    else if (query === 'shima' | query === 'dr shima' | query === 'dr s' | query === 'dr sh' | query === 'dr shi' |query === 'Dr Shima Rezaei Rashnoodi' | query === 'Rezaei Rashnoodi' |  query === 'Rezaei' | query === 'Rashnoodi' | query === 'sh') {
       $("#test").hide();
       $("#navTest").hide();
       $("#Maria").hide();
