@@ -213,30 +213,31 @@ function myFunction2(){
 
 
 // --------------------FUNCTIONAL SEARCH----------------------- 
+//definitely a foolable functionality that will not account for spelling errors or every variation of the lecturer's name, but for the most part, it works well.
 
 $('#myInput').on('keydown', function (event) {
   if (event.key === 'Enter') {
     const query = $(this).val().toLowerCase(); 
-
-    if (query === 'maria' | query === 'dr maria' | query === 'dr m' | query === 'Dr Maria-Carolina Cambre' | query === 'Cambre' | query === 'mar' ) {
+    
+    if (query === 'maria' | query === 'dr maria' | query === 'dr m' | query === 'dr mar' | query === 'Dr Maria-Carolina Cambre' | query === 'Cambre' | query === 'Cam' |query === 'mar' ) {
       $("#Maria").show();
       $("#nav").show();
       $("#test").hide();
       $("#search").hide();
     } 
-    else if (query === 'isabel' | query === 'dr isabel' | query === 'dr i' | query === 'Dr Isabel Machado' | query === 'Machado' | query === 'is' ) {
+    else if (query === 'isabel' | query === 'dr isabel' | query === 'dr i' | query === 'dr is' | query === 'Dr Isabel Machado' | query === 'Machado' | query === 'Mac' |query === 'is' ) {
       $("#Isabel").show();
       $("#nav").show();
       $("#test").hide();
       $("#search").hide();
     } 
-    else if (query === 'daniel' | query === 'daniel' | query === 'dan' | query === 'Daniel Wildberger' | query === 'Wildberger' | query === 'da' ) {
+    else if (query === 'daniel' | query === 'daniel' | query === 'dan' | query === 'Daniel Wildberger' | query === 'Wildberger' | query === 'Wil' | query === 'da' ) {
       $("#Daniel").show();
       $("#nav").show();
       $("#test").hide();
       $("#search").hide();
     } 
-    else if (query === 'shima' | query === 'dr shima' | query === 'dr s' | query === 'Dr Shima Rezaei Rashnoodi' | query === 'Rezaei Rashnoodi' |  query === 'Rezaei' | query === 'Rashnoodi' | query === 'sh') {
+    else if (query === 'shima' | query === 'dr shima' | query === 'dr s' | query === 'dr sh' | query === 'Dr Shima Rezaei Rashnoodi' | query === 'Rezaei Rashnoodi' |  query === 'Rezaei' | query === 'Rashnoodi' | query === 'sh') {
       $("#Shima").show();
       $("#nav").show();
       $("#test").hide();
